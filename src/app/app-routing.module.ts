@@ -15,6 +15,7 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { TermsOfServicePrivacyComponent } from './pages/terms-of-service-privacy/terms-of-service-privacy.component';
 import { Error404Component } from './pages/error-404/error-404.component';
 import { ConfirmationPageComponent } from './pages/confirmation-page/confirmation-page.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -31,7 +32,9 @@ const routes: Routes = [
   { path: 'contact-us', component: ContactUsComponent },
   { path: 'terms-of-service-privacy', component: TermsOfServicePrivacyComponent },
   { path: 'confirmation', component: ConfirmationPageComponent },
+  { path: 'register', component: RegisterComponent },
   { path: '**', component: Error404Component } // Wildcard route for 404
+
 ];
 
 @NgModule({

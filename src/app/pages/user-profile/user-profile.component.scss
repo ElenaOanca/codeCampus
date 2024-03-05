@@ -1,127 +1,125 @@
 /* General styling */
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #F3F3F3; /* Adjust color to match screenshot */
-  margin: 0;
-  padding: 0;
+  font-family: 'Arial', sans-serif; /* Imposta il font a 'Arial', sans-serif */
+  background-color: #F3F3F3; /* Regola il colore di sfondo a #F3F3F3 */
+  margin: 0; /* Rimuove il margine esterno */
+  padding: 0; /* Rimuove il padding */
 }
 
 /* Profile container styling */
 .profile-container {
-  display: flex;
-  align-items: flex-start;
-  padding: 20px;
-
+  display: flex; /* Imposta il display a flex */
+  align-items: flex-start; /* Allinea gli elementi in alto */
+  padding: 20px; /* Aggiunge un padding di 20px */
 }
 
 /* Sidebar styling */
 .sidebar {
-  width: 200px; /* Adjust width as necessary */
-  background-color: #333; /* Adjust color to match screenshot */
-  color: #fff;
-  padding: 20px;
+  width: 200px; /* Imposta la larghezza a 200px */
+  background-color: #333; /* Regola il colore di sfondo a #333 */
+  color: #fff; /* Imposta il colore del testo a #fff */
+  padding: 20px; /* Aggiunge un padding di 20px */
 }
 
 .user-info {
-  text-align: center;
-  margin-bottom: 20px;
-
+  text-align: center; /* Allinea il testo al centro */
+  margin-bottom: 20px; /* Aggiunge un margine inferiore di 20px */
 }
 
 .user-info .user-image {
-  border-radius: 50%;
-  width: 150px; /* Adjust size as necessary */
-  height: auto;
-  margin-bottom: 10px;
+  border-radius: 50%; /* Aggiunge un bordo arrotondato al 50% */
+  width: 150px; /* Imposta la larghezza a 150px */
+  height: auto; /* Imposta l'altezza automatica */
+  margin-bottom: 10px; /* Aggiunge un margine inferiore di 10px */
 }
 
 .user-name {
-  margin: 0;
+  margin: 0; /* Rimuove il margine esterno */
 }
 
 .nav-menu ul {
-  list-style-type: none;
-  padding: 0;
+  list-style-type: none; /* Rimuove il tipo di elenco */
+  padding: 0; /* Rimuove il padding */
 }
 
 .nav-menu .nav-item {
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Aggiunge un margine inferiore di 10px */
 }
 
 .nav-menu .nav-item a {
-  color: #fff;
-  text-decoration: none;
-  display: block;
-  padding: 10px;
-  border-left: 3px solid transparent; /* Adjust color to match active item in screenshot */
+  color: #fff; /* Imposta il colore del testo a #fff */
+  text-decoration: none; /* Rimuove la decorazione del testo */
+  display: block; /* Imposta il display a blocco */
+  padding: 10px; /* Aggiunge un padding di 10px */
+  border-left: 3px solid transparent; /* Aggiunge una bordatura sinistra di 3px trasparente */
 }
 
 .nav-menu .nav-item.active a {
-  border-left-color: #F90; /* Adjust to match active item in screenshot */
+  border-left-color: #F90; /* Imposta il colore della bordatura sinistra a #F90 */
 }
 
 /* Profile and Events card styling */
 .profile-section {
-  flex-grow: 1;
-  padding-left: 20px;
+  flex-grow: 1; /* Imposta la crescita flessibile a 1 */
+  padding-left: 20px; /* Aggiunge un padding sinistro di 20px */
 }
 
 .profile-card, .events-card {
-  background-color: #fff;
-  margin-bottom: 20px;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* Regola il colore di sfondo a #fff */
+  margin-bottom: 20px; /* Aggiunge un margine inferiore di 20px */
+  border-radius: 4px; /* Aggiunge un bordo arrotondato di 4px */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra */
 }
 
 .card-header {
-  padding: 20px;
-  border-bottom: 1px solid #EAEAEA; /* Adjust color to match screenshot */
+  padding: 20px; /* Aggiunge un padding di 20px */
+  border-bottom: 1px solid #EAEAEA; /* Aggiunge una bordatura inferiore di 1px solida #EAEAEA */
 }
 
 .card-header h2 {
-  margin: 0;
-  color: #333; /* Adjust color to match screenshot */
+  margin: 0; /* Rimuove il margine esterno */
+  color: #333; /* Imposta il colore del testo a #333 */
 }
 
 .card-header p {
-  margin: 0;
-  color: #777; /* Adjust color to match screenshot */
-  font-size: 0.9rem;
+  margin: 0; /* Rimuove il margine esterno */
+  color: #777; /* Imposta il colore del testo a #777 */
+  font-size: 0.9rem; /* Imposta la dimensione del testo a 0.9rem */
 }
 
 .card-body {
-  padding: 20px;
+  padding: 20px; /* Aggiunge un padding di 20px */
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Aggiunge un margine inferiore di 20px */
 }
 
 .form-group label {
-  display: block;
-  color: #333; /* Adjust color to match screenshot */
-  margin-bottom: 5px;
+  display: block; /* Imposta il display a blocco */
+  color: #333; /* Imposta il colore del testo a #333 */
+  margin-bottom: 5px; /* Aggiunge un margine inferiore di 5px */
 }
 
 .form-group input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #DDD; /* Adjust color to match screenshot */
-  border-radius: 4px;
-  box-sizing: border-box;
+  width: 100%; /* Imposta la larghezza al 100% */
+  padding: 10px; /* Aggiunge un padding di 10px */
+  border: 1px solid #DDD; /* Aggiunge una bordatura di 1px solida #DDD */
+  border-radius: 4px; /* Aggiunge un bordo arrotondato di 4px */
+  box-sizing: border-box; /* Imposta il box-sizing a border-box */
 }
 
 .btn-save {
-  background-color: #333; /* Adjust color to match screenshot */
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 10px;
-  display: inline-block;
+  background-color: #333; /* Regola il colore di sfondo a #333 */
+  color: #fff; /* Imposta il colore del testo a #fff */
+  border: none; /* Rimuove il bordo */
+  padding: 10px 20px; /* Aggiunge un padding di 10px in alto e in basso, 20px a sinistra e a destra */
+  border-radius: 4px; /* Aggiunge un bordo arrotondato di 4px */
+  cursor: pointer; /* Imposta il cursore a pointer */
+  margin-top: 10px; /* Aggiunge un margine superiore di 10px */
+  display: inline-block; /* Imposta il display a inline-block */
 }
 
 .btn-save:hover {
-  background-color: #555; /* Adjust for hover effect */
+  background-color: #555; /* Regola il colore di sfondo a #555 al passaggio del mouse */
 }

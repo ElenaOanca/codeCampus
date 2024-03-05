@@ -1,78 +1,76 @@
-
 .total {
- background-color: black;
- width: 100%;
-  height:80vh;
-  margin: 0;
+  background-color: black; // Imposta il colore di sfondo a nero
+  width: 100%; // Imposta la larghezza al 100% del contenitore padre
+  height:80vh; // Imposta l'altezza all'80% dell'altezza della viewport
+  margin: 0; // Rimuove tutti i margini
 }
 
 .login-container {
-  width: 300px;
-  margin: auto;
-  padding: 50px;
+  width: 300px; // Imposta la larghezza a 300px
+  margin: auto; // Centra il contenitore orizzontalmente
+  padding: 50px; // Aggiunge un padding di 50px su tutti i lati
 
-  background: #333;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  height: auto;
+  background: #333; // Imposta il colore di sfondo a un grigio scuro
+  border-radius: 5px; // Arrotonda gli angoli del contenitore
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); // Aggiunge un'ombra al contenitore
+  height: auto; // Imposta l'altezza in base al contenuto
 }
 
 .login-form {
-  display: flex;
-  flex-direction: column;
+  display: flex; // Imposta il layout del form a flex
+  flex-direction: column; // Imposta l'orientamento del layout a colonna
 }
 
 .login-form h2 {
-  text-align: center;
-  color: white;
+  text-align: center; // Centra il testo orizzontalmente
+  color: white; // Imposta il colore del testo a bianco
 }
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 15px; // Aggiunge un margine inferiore di 15px
 }
 
 .form-group label {
-  display: block;
-  color: white;
+  display: block; // Imposta il display a block, così l'elemento occupa tutta la larghezza disponibile
+  color: white; // Imposta il colore del testo a bianco
 }
 
 .form-group input[type="text"],
 .form-group input[type="password"] {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  width: 100%; // Imposta la larghezza al 100% del contenitore padre
+  padding: 8px; // Aggiunge un padding di 8px su tutti i lati
+  border: 1px solid #ccc; // Imposta un bordo solido di 1px di colore grigio chiaro
+  border-radius: 4px; // Arrotonda gli angoli dell'input
 }
 
 .form-group.remember-me {
-  display: flex;
-  align-items: center;
+  display: flex; // Imposta il layout a flex
+  align-items: center; // Allinea gli elementi al centro verticalmente
 }
 
 .form-group.remember-me input {
-  margin-right: 5px;
+  margin-right: 5px; // Aggiunge un margine destro di 5px all'input
 }
 
 .form-actions {
-  text-align: center;
+  text-align: center; // Centra il testo orizzontalmente
 }
 
 .form-actions button {
-  padding: 10px 15px;
-  margin-right: 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  padding: 10px 15px; // Aggiunge un padding di 10px in alto e in basso, e 15px a sinistra e a destra
+  margin-right: 10px; // Aggiunge un margine destro di 10px
+  border: none; // Rimuove il bordo
+  border-radius: 4px; // Arrotonda gli angoli del bottone
+  cursor: pointer; // Imposta il cursore a pointer quando si passa sopra il bottone
 }
 
 .form-actions button:hover {
-  opacity: 0.8;
+  opacity: 0.8; // Riduce l'opacità al 80% quando si passa sopra il bottone
 }
 
-/* Add responsiveness for smaller screens */
 @media (max-width: 600px) {
   .login-container {
-    width: auto;
-    margin: 20px;
+    width: auto; // Imposta la larghezza in base al contenuto
+    margin: 20px; // Aggiunge un margine di 20px su tutti i lati
   }
 }

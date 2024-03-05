@@ -16,7 +16,7 @@ body {
   // Imposta il padding superiore e inferiore del footer
   padding: 20px 0;
   // Imposta la posizione del footer come relativa
-  position: relative;
+  position: fixed;
   // Imposta il footer in fondo alla pagina
   bottom: 0;
   // Imposta la larghezza del footer al 100%
@@ -25,14 +25,7 @@ body {
   text-align: center;
   // Imposta nuovamente il padding (duplicato, può essere rimosso)
   padding: 20px 0;
-  // Imposta la posizione del footer come fissa
-  position: fixed;
 
-  bottom: 0;
-  // Allinea il footer al lato sinistro della pagina
-  left: 0;
-  // Allinea il footer al lato destro della pagina
-  right: 0;
   // Imposta nuovamente la larghezza del footer al 100% (duplicato, può essere rimosso)
   width: 100%;
   // Imposta l'indice di sovrapposizione del footer per assicurarsi che rimanga sopra gli altri contenuti

@@ -1,0 +1,59 @@
+.container {
+  display: flex; // Imposta il layout a flex
+  justify-content: center; // Centra gli elementi orizzontalmente nel contenitore
+  align-items: center; // Centra gli elementi verticalmente nel contenitore
+  height: 100vh; // Imposta l'altezza al 100% della viewport
+  background-color: #000; // Imposta il colore di sfondo a nero
+}
+
+.contact-form {
+  background-color: #333; // Imposta il colore di sfondo a un grigio scuro
+  padding: 40px; // Aggiunge un padding di 40px su tutti i lati
+  border-radius: 5px; // Arrotonda gli angoli del form
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); // Aggiunge un'ombra al form
+  width: 100%; // Imposta la larghezza al 100% del contenitore padre
+  max-width: 400px; // Imposta la larghezza massima a 400px
+}
+
+.form-group {
+  margin-bottom: 20px; // Aggiunge un margine inferiore di 20px
+}
+
+.form-group label {
+  color: #fff; // Imposta il colore del testo a bianco
+  margin-bottom: 8px; // Aggiunge un margine inferiore di 8px
+  display: block; // Imposta il display a block, così l'elemento occupa tutta la larghezza disponibile
+}
+
+.form-control {
+  width: 100%; // Imposta la larghezza al 100% del contenitore padre
+  padding: 10px; // Aggiunge un padding di 10px su tutti i lati
+  border-radius: 5px; // Arrotonda gli angoli dell'input
+  border: none; // Rimuove il bordo
+  margin-top: 5px; // Aggiunge un margine superiore di 5px
+  background-color: #555; // Imposta il colore di sfondo a un grigio più scuro
+  color: #fff; // Imposta il colore del testo a bianco
+}
+
+.btn {
+  background-color: #ffc107; // Imposta il colore di sfondo a un giallo dorato
+  border-color: #ffc107; // Imposta il colore del bordo a un giallo dorato
+  color: #000; // Imposta il colore del testo a nero
+  text-transform: uppercase; // Trasforma il testo in maiuscolo
+  padding: 10px; // Aggiunge un padding di 10px su tutti i lati
+  border-radius: 5px; // Arrotonda gli angoli del bottone
+  cursor: pointer; // Imposta il cursore a pointer quando si passa sopra il bottone
+  width: 100%; // Imposta la larghezza al 100% del contenitore padre
+  border: none; // Rimuove il bordo
+  margin-top: 20px; // Aggiunge un margine superiore di 20px
+}
+
+.btn:hover {
+  background-color: #e0a800; // Cambia il colore di sfondo a un giallo più scuro quando si passa sopra il bottone
+}
+
+@media (max-width: 600px) {
+  .contact-form {
+    padding: 20px; // Riduce il padding a 20px su tutti i lati su schermi più piccoli
+  }
+}

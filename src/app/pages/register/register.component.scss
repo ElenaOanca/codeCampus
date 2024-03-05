@@ -1,0 +1,53 @@
+@import "../../_variables.scss";
+
+// Set background color for body
+body {
+  background-color: black;
+}
+
+/* styles.css o registration.component.css */
+// Styling for container
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+}
+
+// Styling for form group
+.form-group {
+  margin-bottom: 20px;
+}
+
+// Styling for form group label
+.form-group label {
+  display: block;
+}
+
+// Styling for form control
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+// Styling for primary button
+.btn-primary {
+  background-color:$primary-color;
+  border-color: $primary-color;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+// Styling for primary button on hover
+.btn-primary:hover {
+  background-color:$primary-color;
+}

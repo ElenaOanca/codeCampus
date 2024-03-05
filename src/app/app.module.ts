@@ -22,6 +22,9 @@ import { FooterComponent } from './components/footer/footer.component';
 
 import { HeaderComponent } from './components/header/header.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { RegisterComponent } from './pages/register/register.component';
+import { FormsModule } from '@angular/forms';
+
 
 
 
@@ -45,12 +48,14 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     ConfirmationPageComponent,
     FooterComponent,
     HeaderComponent,
+    RegisterComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CarouselModule.forRoot(),
+    FormsModule
 
 
   ],

@@ -1,0 +1,45 @@
+<body class="bg-black">
+
+
+<!-- registration.component.html -->
+<div class="container">
+  <form class="registration-form" #registrationForm="ngForm" (ngSubmit)="onSubmit(registrationForm.value)">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" class="form-control" name="email" ngModel required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" class="form-control" name="password" ngModel required>
+    </div>
+    <div class="form-group">
+      <label for="confirm-password">Conferma Password:</label>
+      <input type="password" id="confirm-password" class="form-control" name="confirmPassword" ngModel required>
+    </div>
+    <div class="form-group">
+      <label for="first-name">Nome:</label>
+      <input type="text" id="first-name" class="form-control" name="firstName" ngModel required>
+    </div>
+    <div class="form-group">
+      <label for="last-name">Cognome:</label>
+      <input type="text" id="last-name" class="form-control" name="lastName" ngModel required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Telefono:</label>
+      <input type="tel" id="phone" class="form-control" name="phone" ngModel required>
+    </div>
+    <!-- Aggiungi altri campi opzionali come indirizzo, città, ecc. qui -->
+    <div class="form-group">
+      <label for="payment-method">Metodo di Pagamento:</label>
+      <select id="payment-method" class="form-control" name="paymentMethod" ngModel required>
+        <option value="creditCard">Carta di Credito</option>
+        <option value="paypal">PayPal</option>
+        <!-- Aggiungi altri metodi di pagamento qui -->
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Registra</button>
+  </form>
+</div>
+
+</body>
+
