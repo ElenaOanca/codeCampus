@@ -1,0 +1,88 @@
+.navbar-brand {
+
+  display: flex; /* Permette di allineare il logo alla sinistra */
+  align-items: center; /* Allinea l'immagine verticalmente al centro */
+    }
+
+
+    .navbar-brand img {
+      border-radius: 40%;
+
+          width: 100px;
+    height: 100px;
+   //margine sinistra 0
+    margin-left: 0;
+margin-right: 30px; /* Margine destro di 30px */
+margin-bottom: 0; /* Nessun margine inferiore */
+margin-top: 0; /* Nessun margine superiore */
+
+display: block; /* Elemento visualizzato come blocco */
+
+/* Impostazioni per lo sfondo */
+background-size: contain; /* Immagine di sfondo dimensionata per contenere l'area */
+background-position: center; /* Immagine di sfondo centrata */
+
+/* Ombra */
+box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Ombra con 10px di diffusione, colore nero e opacità 0.5 */
+
+/* Transizione */
+transition: all 0.3s; /* Transizione animata per tutti i cambiamenti con durata di 0.3 secondi */
+
+/* Pseudo-classe :hover per effetto hover */
+&:hover {
+    transform: scale(1.1); /* Effetto di ingrandimento al passaggio del mouse */
+}
+
+  }
+
+  .navbar{
+
+      background: linear-gradient(135deg, #a95bbe 0%, #8741a8 25%, #2f136c 50%, #1c1156 75%, #471e8b 100%);
+
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+
+  /* Stile generale per i link nella barra di navigazione */
+.navbar-nav .nav-link {
+  color:white; /* Colore del testo */
+  font-weight: bold; /* Grassetto */
+  text-transform: uppercase; /* Testo maiuscolo */
+  margin-right: 15px; /* Margine a destra per separare i link */
+}
+
+/* Stile per i link quando passa sopra di essi il cursore */
+.navbar-nav .nav-link:hover {
+  color: #555; /* Cambia il colore del testo al passaggio del cursore */
+}
+
+/* Stile per il link attivo (quando si è sulla pagina corrispondente) */
+.navbar-nav .nav-item.active .nav-link {
+  color: #007bff; /* Cambia il colore del testo per il link attivo */
+}
+
+
+/* Stile per il testo del pulsante "Search" */
+.navbar-nav .form-control[type="search"]::placeholder {
+  color:rgb(219, 174, 242); /* Colore del testo del placeholder */
+  font-style: italic; /* Corsivo */
+  font-weight: bold; /* Grassetto */
+  text-transform: uppercase; /* Testo maiuscolo */
+  text-align: center; /* Allineamento al centro */
+  font-size: 1.2em; /* Dimensione del testo */
+  letter-spacing: 1px; /* Spaziatura tra le lettere */
+  text-shadow: 0 0 5px rgba(230, 217, 235, 0.5); /* Ombra del testo */
+
+
+}
+
+/* Stile per il testo del pulsante "Search" */
+.navbar-nav .btn[type="submit"] {
+  color: white; /* Colore del testo del pulsante */
+}
+
+.bi bi-search {
+  color: white;
+  font-size: 2.5rem;
+
+}

@@ -1,0 +1,75 @@
+// Imposta il font di default per tutto il corpo del documento
+body {
+  font-family: Arial, sans-serif;
+}
+
+// Stile per il footer
+.footer {
+  // Imposta il colore di sfondo del footer
+
+  background: linear-gradient(135deg, #a95bbe 0%, #8741a8 25%, #2f136c 50%, #1c1156 75%, #471e8b 100%);
+  // Imposta il colore del testo del footer
+  color: white;
+  // Centra il testo del footer
+  text-align: center;
+  // Imposta il padding superiore e inferiore del footer
+  padding: 20px 0;
+  // Imposta la posizione del footer come relativa
+  position: relative;
+  // Imposta il footer in fondo alla pagina
+  bottom: 0;
+  // Imposta la larghezza del footer al 100%
+  width: 100%;
+  // Centra nuovamente il testo (duplicato, può essere rimosso)
+  text-align: center;
+  // Imposta nuovamente il padding (duplicato, può essere rimosso)
+  padding: 20px 0;
+  // Imposta la posizione del footer come fissa
+  position: fixed;
+  // Imposta il footer in fondo alla pagina
+  bottom: 0;
+  // Allinea il footer al lato sinistro della pagina
+  left: 0;
+  // Allinea il footer al lato destro della pagina
+  right: 0;
+  // Imposta nuovamente la larghezza del footer al 100% (duplicato, può essere rimosso)
+  width: 100%;
+  // Imposta l'indice di sovrapposizione del footer per assicurarsi che rimanga sopra gli altri contenuti
+  z-index: 1000;
+}
+
+// Stile per i link nel footer
+.footer a {
+  // Imposta il colore del testo dei link
+  color: white;
+  // Rimuove la sottolineatura dei link
+  text-decoration: none;
+  // Imposta i margini intorno ai link
+  margin: 0 10px;
+}
+
+// Stile per i link nel footer quando il mouse è sopra
+.footer a:hover {
+  // Aggiunge la sottolineatura ai link quando il mouse è sopra
+  text-decoration: underline;
+}
+
+// Stile per i social media nel footer
+.footer .social-media {
+  // Imposta il margine superiore per i social media
+  margin-top: 20px;
+}
+
+// Stile per i link dei social media nel footer
+.footer .social-media a {
+  // Imposta i margini intorno ai link dei social media
+  margin: 0 5px;
+}
+
+// Stile per il testo di copyright nel footer
+.footer .copy {
+  // Imposta il margine superiore per il testo di copyright
+  margin-top: 20px;
+  // Imposta la dimensione del font per il testo di copyright
+  font-size: 0.8em;
+}
