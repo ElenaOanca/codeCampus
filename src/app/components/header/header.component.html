@@ -15,10 +15,26 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <!-- Lista dei link del menu di navigazione -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+ <!-- Link alla lista dei corsi -->
+ <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Corsi
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <ng-container *ngFor="let course of courses">
+      <li class="dropdown-item dropdown-submenu">
+        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">{{ course.category }}</a>
+        <ul class="dropdown-menu">
+          <li *ngFor="let language of course.languages" class="dropdown-item">{{ language }}</li>
+        </ul>
+      </li>
+    </ng-container>
+  </ul>
+</li>
 
-          <!-- Link alla lista dei corsi -->
-          <li class="nav-item">
-              <a class="nav-link" routerLink="/course-list">Course List</a>
+            <!-- Link alle recensioni-->
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/course-list">About</a>
           </li>
 
 
