@@ -1,12 +1,20 @@
 // src/styles/_variables.scss
 
 // Colori
-$primary-color: #007bff;
-$secondary-color: #6c757d;
-$success-color: #28a745;
+$primary-color: #c6bc0e;
+$secondary-color:  #2f136c;
+$terciary-color: #1c1156;
+$quaternary-color: black;
 
-$primary-background: linear-gradient(135deg, #a95bbe 0%, #8741a8 25%, #2f136c 50%, #1c1156 75%, #471e8b 100%);
+$primary-background: linear-gradient(135deg, hsl(285, 40%, 96%) 0%, #d1ade1 25%, #9165f0 50%, #846cfd 75%, #471e8b 100%);
 
 // Font
 $base-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $heading-font-size: 2rem;
+
+//ombra card e bottone
+$box-shadow: 0 0 10px rgba(169, 91, 190, 0.0),
+             0 0 10px rgba(135, 65, 168, 0.25),
+             0 0 10px rgba(47, 19, 108, 0.50),
+             0 0 10px rgba(28, 17, 86, 0.75),
+             0 0 10px rgba(71, 30, 139, 1.0);

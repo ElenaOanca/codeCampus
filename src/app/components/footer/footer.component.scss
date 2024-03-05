@@ -8,7 +8,7 @@ body {
 // Stile per il footer
 .footer {
   // Imposta il colore di sfondo del footer
-  background: $primary-background; /* Colore di sfondo */
+  background: black; /* Colore di sfondo */
   // Imposta il colore del testo del footer
   color: white;
   // Centra il testo del footer
@@ -26,8 +26,7 @@ body {
   // Imposta nuovamente il padding (duplicato, può essere rimosso)
   padding: 20px 0;
   // Imposta la posizione del footer come fissa
-  position: fixed;
-  // Imposta il footer in fondo alla pagina
+
   bottom: 0;
   // Allinea il footer al lato sinistro della pagina
   left: 0;
@@ -74,3 +73,14 @@ body {
   // Imposta la dimensione del font per il testo di copyright
   font-size: 0.8em;
 }
+
+.hr {
+
+  height: 5px; /* Sets the height of the HR */
+background-color: #d1b713;/* Uses the primary color variable */
+  width: 70%; /* Sets the width to 70% of its parent container */
+  margin: 0 auto; /* Centers the HR within its container */
+  z-index: 5000;
+}
+
+

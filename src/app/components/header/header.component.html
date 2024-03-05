@@ -1,8 +1,10 @@
 <!-- Inizio della barra di navigazione -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg  sticky-top">
+
   <!-- Link al logo del sito -->
   <a class="navbar-brand" routerLink="/">
-      <img src="../../../assets/logo.jpg" alt="logo" width="100" height="100">
+      <img src="../../../assets/logo.png" alt="logo" width="100" height="100">
+
   </a>
   <!-- Pulsante per il menu di navigazione su schermi piccoli -->
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -13,17 +15,12 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <!-- Lista dei link del menu di navigazione -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <!-- Link alla homepage -->
-          <li class="nav-item">
-              <a class="nav-link" routerLink="/">Homepage</a>
-          </li>
+
           <!-- Link alla lista dei corsi -->
           <li class="nav-item">
               <a class="nav-link" routerLink="/course-list">Course List</a>
           </li>
-          <!-- Link alla pagina di blog&news-->
-          <li class="nav-item">
-              <a class="nav-link" routerLink="/blog-news">Blog&News</a>
+
 
           <!-- Link al checkout -->
           <li class="nav-item">
@@ -52,8 +49,7 @@
               <a class="nav-link" routerLink="/user-profile">User Profile</a>
           </li>
 
-          <li><a class="nav-link" routerLink="/checkout">Checkout</a>
-          </li>
+
           <!-- Link al carrello -->
           <li class="nav-item">
             <a class="nav-link" routerLink="/cart">

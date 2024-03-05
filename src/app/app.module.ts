@@ -21,6 +21,8 @@ import { ConfirmationPageComponent } from './pages/confirmation-page/confirmatio
 import { FooterComponent } from './components/footer/footer.component';
 
 import { HeaderComponent } from './components/header/header.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+
 
 
 @NgModule({
@@ -47,7 +49,10 @@ import { HeaderComponent } from './components/header/header.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CarouselModule.forRoot(),
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

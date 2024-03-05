@@ -1,1 +1,64 @@
-<p>user-profile works!</p>
+<!-- profile.component.html -->
+<div class="profile-container">
+  <aside class="sidebar">
+    <div class="user-info">
+      <img src="path-to-user-image.jpg" alt="User" class="user-image">
+      <h3 class="user-name">Marina Douton</h3>
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li class="nav-item active"><a href="#">Profile</a></li>
+        <li class="nav-item"><a href="#">Password</a></li>
+        <li class="nav-item"><a href="#">Subscription</a></li>
+        <!-- other menu items -->
+      </ul>
+    </nav>
+  </aside>
+
+  <section class="profile-section">
+    <div class="profile-card">
+      <header class="card-header">
+        <h2>Profile</h2>
+        <p>Last updated: <span>2023/02/15 15:18:14</span></p>
+      </header>
+      <div class="card-body">
+        <!-- Profile form -->
+        <form>
+          <div class="form-group">
+            <label for="nickname">Nickname</label>
+            <input type="text" id="nickname" placeholder="Please enter your nickname">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Please enter your email">
+          </div>
+          <!-- More form fields -->
+          <button type="submit" class="btn-save">Save</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="events-card">
+      <header class="card-header">
+        <h2>Events</h2>
+        <p>Last updated: <span>2023/02/15 15:18:14</span></p>
+      </header>
+      <div class="card-body">
+        <!-- Events form -->
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Please enter your real name">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Please enter your phone number">
+          </div>
+          <!-- More form fields -->
+          <button type="submit" class="btn-save mb-5">Save</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
+

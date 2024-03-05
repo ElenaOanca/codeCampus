@@ -1,0 +1,125 @@
+/* General styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #F3F3F3; /* Adjust color to match screenshot */
+  margin: 0;
+  padding: 0;
+}
+
+/* Profile container styling */
+.profile-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 200px; /* Adjust width as necessary */
+  background-color: #333; /* Adjust color to match screenshot */
+  color: #fff;
+  padding: 20px;
+}
+
+.user-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-info .user-image {
+  border-radius: 50%;
+  width: 100px; /* Adjust size as necessary */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.user-name {
+  margin: 0;
+}
+
+.nav-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-menu .nav-item {
+  margin-bottom: 10px;
+}
+
+.nav-menu .nav-item a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  border-left: 3px solid transparent; /* Adjust color to match active item in screenshot */
+}
+
+.nav-menu .nav-item.active a {
+  border-left-color: #F90; /* Adjust to match active item in screenshot */
+}
+
+/* Profile and Events card styling */
+.profile-section {
+  flex-grow: 1;
+  padding-left: 20px;
+}
+
+.profile-card, .events-card {
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  padding: 20px;
+  border-bottom: 1px solid #EAEAEA; /* Adjust color to match screenshot */
+}
+
+.card-header h2 {
+  margin: 0;
+  color: #333; /* Adjust color to match screenshot */
+}
+
+.card-header p {
+  margin: 0;
+  color: #777; /* Adjust color to match screenshot */
+  font-size: 0.9rem;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: #333; /* Adjust color to match screenshot */
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #DDD; /* Adjust color to match screenshot */
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.btn-save {
+  background-color: #333; /* Adjust color to match screenshot */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.btn-save:hover {
+  background-color: #555; /* Adjust for hover effect */
+}
