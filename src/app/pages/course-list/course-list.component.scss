@@ -1,0 +1,47 @@
+// src/app/header/header.component.scss
+
+@import '../../_variables.scss';
+
+.line-course {
+  // Add your styles here
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+
+  .course-info {
+    display: flex;
+    align-items: center;
+
+    .course-name {
+      font-size: 20px;
+      font-weight: 600;
+      color: #000;
+    }
+
+    .course-date {
+      font-size: 14px;
+      color: #000;
+      margin-left: 10px;
+    }
+  }
+
+  .course-action {
+    display: flex;
+    align-items: center;
+
+    .course-edit {
+      font-size: 16px;
+      color: #000;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .course-delete {
+      font-size: 16px;
+      color: #000;
+      cursor: pointer;
+    }
+  }
+}

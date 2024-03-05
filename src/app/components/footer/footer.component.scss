@@ -1,3 +1,5 @@
+@import "../../_variables.scss";
+
 // Imposta il font di default per tutto il corpo del documento
 body {
   font-family: Arial, sans-serif;
@@ -6,8 +8,7 @@ body {
 // Stile per il footer
 .footer {
   // Imposta il colore di sfondo del footer
-
-  background: linear-gradient(135deg, #a95bbe 0%, #8741a8 25%, #2f136c 50%, #1c1156 75%, #471e8b 100%);
+  background: $primary-background; /* Colore di sfondo */
   // Imposta il colore del testo del footer
   color: white;
   // Centra il testo del footer

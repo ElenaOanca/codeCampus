@@ -1,3 +1,6 @@
+@import '../../_variables.scss';
+
+
 .navbar-brand {
 
   display: flex; /* Permette di allineare il logo alla sinistra */
@@ -37,8 +40,8 @@ transition: all 0.3s; /* Transizione animata per tutti i cambiamenti con durata 
 
   .navbar{
 
-      background: linear-gradient(135deg, #a95bbe 0%, #8741a8 25%, #2f136c 50%, #1c1156 75%, #471e8b 100%);
-
+//primary-background
+background: $primary-background; /* Colore di sfondo */
 
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
   }
