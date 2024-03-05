@@ -6,12 +6,12 @@
 
 
     .navbar-brand img {
-      border-radius: 40%;
+      border-radius: 40%;/* Bordo arrotondato */
 
-          width: 100px;
-    height: 100px;
-   //margine sinistra 0
-    margin-left: 0;
+          width: 100px;/* Larghezza 100px */
+    height: 100px;/* Altezza 100px */
+
+    margin-left: 0;/* Nessun margine sinistro */
 margin-right: 30px; /* Margine destro di 30px */
 margin-bottom: 0; /* Nessun margine inferiore */
 margin-top: 0; /* Nessun margine superiore */
@@ -86,3 +86,42 @@ transition: all 0.3s; /* Transizione animata per tutti i cambiamenti con durata 
   font-size: 2.5rem;
 
 }
+.form-control[type="search"] {
+  background-color: #d767f5; /* Colore di sfondo */
+  border: none; /* Nessun bordo */
+  border-radius: 50px; /* Bordo arrotondato */
+  padding: 10px 20px; /* Spaziatura interna */
+  margin-right: 15px; /* Margine a destra per separare il pulsante "Search" */
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Ombra */
+
+}
+
+/*stile per placeholder*/
+.form-control[type="search"]::placeholder {
+  color: white; /* Colore del testo del placeholder */
+  font-style: italic; /* Corsivo */
+ text-align: center; /* Allineamento al centro */
+  font-size: 1.0em; /* Dimensione del testo */
+  letter-spacing: 1px; /* Spaziatura tra le lettere */
+  text-shadow: 0 0 5px rgba(230, 217, 235, 0.5); /* Ombra del testo */
+}
+
+/* Stile per il pulsante "Search" */
+.navbar-nav .btn[type="submit"] {
+ border: none; /* Nessun bordo */
+ transition: all 0.3s; /* Transizione animata per tutti i cambiamenti con durata di 0.3 secondi */
+}
+
+//Stile per il carrello
+.bi-cart-plus{
+  color: white;
+  font-size: 1.5rem;
+}
+
+.p-cart{
+  color: white;
+  font-size: 0.7rem;
+  margin: 0px;
+}
+
+

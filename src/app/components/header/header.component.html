@@ -21,21 +21,28 @@
           <li class="nav-item">
               <a class="nav-link" routerLink="/course-list">Course List</a>
           </li>
+          <!-- Link alla pagina di blog&news-->
+          <li class="nav-item">
+              <a class="nav-link" routerLink="/blog-news">Blog&News</a>
 
           <!-- Link al checkout -->
           <li class="nav-item">
-              <a class="nav-link" routerLink="/checkout">Checkout</a>
+
           </li>
           <!-- Form di ricerca -->
           <li class="nav-item">
               <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline" type="submit"><i class="bi bi-search"></i></button>
               </form>
           </li>
       </ul>
       <!-- Lista dei link del menu di navigazione a destra -->
       <ul class="navbar-nav">
+        <!-- Link alla dashboard admin -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/admin-dashboard">Admin Dashboard</a>
+      </li>
           <!-- Link alla pagina di login/registrazione -->
           <li class="nav-item">
               <a class="nav-link" routerLink="/login-signup">Login/Signup</a>
@@ -44,11 +51,20 @@
           <li class="nav-item">
               <a class="nav-link" routerLink="/user-profile">User Profile</a>
           </li>
-            <!-- Link al carrello -->
-            <li class="nav-item">
-              <a class="nav-link" routerLink="/cart">Cart</a>
+
+          <li><a class="nav-link" routerLink="/checkout">Checkout</a>
           </li>
+          <!-- Link al carrello -->
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/cart">
+              <p><i class="bi bi-cart-plus"></i></p>
+              </a>
+          </li>
+
+
       </ul>
+
+
   </div>
 </nav>
 <!-- Fine della barra di navigazione -->
