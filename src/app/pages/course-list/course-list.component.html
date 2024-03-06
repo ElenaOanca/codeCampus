@@ -1,21 +1,54 @@
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item" *ngFor="let card of cards; let i = index" [class.active]="i === 0">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" [src]="card.imgSrc" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">{{card.title}}</h5>
-          <p class="card-text">{{card.text}}</p>
-        </div>
-      </div>
+
+
+
+<section class="slogan">
+
+
+<div >
+  <h3>"Esplora, Impara, Trasforma: Il Tuo Viaggio Formativo Inizia Qui!"</h3>
+</div>
+</section>
+
+
+
+<hr>
+<!-- bottone con la scritta ABBONATI SUBITO che ti porta router link /subscription -->
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <button class="btn" routerLink="/subscription">ABBONATI SUBITO</button>
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" (click)="previous()">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next" (click)="next()">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+<hr>
+
+
+<!-- //CAROUSEL COMPONENT FOR COURSE LIST PAGE -->
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div
+      *ngFor="
+        let card of cards.slice(activeIndex, activeIndex + 4);
+        let i = index
+      "
+     class="carousel-item"
+[ngClass]="{ active: i === 0 }"
+    >
+      <div class="image"><img [src]="card.imgSrc" class="img" alt="..." /></div>
+      <div class="text">
+        <h5>{{ card.title }}</h5>
+        <p>{{ card.text }}</p>
+      </div>
+    </div>
+    <a class="carousel-control-prev" role="button" (click)="previous()">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" role="button" (click)="next()">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only"></span>
+    </a>
+  </div>
 </div>
+
+

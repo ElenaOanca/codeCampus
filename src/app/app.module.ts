@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -19,11 +19,17 @@ import { TermsOfServicePrivacyComponent } from './pages/terms-of-service-privacy
 import { Error404Component } from './pages/error-404/error-404.component';
 import { ConfirmationPageComponent } from './pages/confirmation-page/confirmation-page.component';
 import { FooterComponent } from './components/footer/footer.component';
-
 import { HeaderComponent } from './components/header/header.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { RegisterComponent } from './pages/register/register.component';
+import { CosaImpareraiComponent } from './pages/cosa-imparerai/cosa-imparerai.component';
+
+
+
 import { FormsModule } from '@angular/forms';
+
+import { SubscriptionComponent } from './pages/subscription/subscription.component';
+
 
 
 
@@ -49,13 +55,18 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     HeaderComponent,
     RegisterComponent,
+    SubscriptionComponent,
+    CosaImpareraiComponent,
+
+
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CarouselModule.forRoot(),
-    FormsModule
+    FormsModule,
+    CommonModule
 
 
   ],

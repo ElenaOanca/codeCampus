@@ -1,3 +1,5 @@
+import { CosaImpareraiComponent } from './pages/cosa-imparerai/cosa-imparerai.component';
+import { SubscriptionComponent } from './pages/subscription/subscription.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
@@ -17,6 +19,11 @@ import { Error404Component } from './pages/error-404/error-404.component';
 import { ConfirmationPageComponent } from './pages/confirmation-page/confirmation-page.component';
 import { RegisterComponent } from './pages/register/register.component';
 
+
+
+
+
+
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'course-list', component: CourseListComponent },
@@ -33,6 +40,9 @@ const routes: Routes = [
   { path: 'terms-of-service-privacy', component: TermsOfServicePrivacyComponent },
   { path: 'confirmation', component: ConfirmationPageComponent },
   { path: 'register', component: RegisterComponent },
+  { path: 'subscription', component: SubscriptionComponent },
+  { path: 'cosa-imparerai', component: CosaImpareraiComponent },
+
   { path: '**', component: Error404Component } // Wildcard route for 404
 
 ];
