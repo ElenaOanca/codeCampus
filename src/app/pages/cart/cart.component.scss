@@ -1,19 +1,56 @@
+/* cart.component.css */
 .cart-container {
-  width: 300px;
-  border: 1px solid #ccc;
-  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
 }
 
-.cart-item {
+.order-summary, .payment-options {
+  background: #FFF;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.order-summary h2, .payment-options h2 {
+  margin-bottom: 20px;
+}
+
+.item {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
-.total {
-  margin-top: 10px;
+.description div {
+  margin: 5px 0;
 }
 
-button {
-  cursor: pointer;
+.totals .total {
+  font-weight: bold;
+}
+
+.paypal-login input, .paypal-login button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+}
+
+.paypal-login button {
+  background: #FFC439;
+  border: none;
+  border-radius: 5px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.paypal-create {
+  padding: 20px 0;
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
 }

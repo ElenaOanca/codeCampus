@@ -1,7 +1,9 @@
+// cart.component.ts
 import { Component } from '@angular/core';
 
-interface CartItem {
+interface Item {
   name: string;
+  sku: string;
   price: number;
   quantity: number;
 }
@@ -9,31 +11,16 @@ interface CartItem {
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
-  styleUrls: ['./cart.component.scss']
+  styleUrls: ['./cart.component.css']
 })
 export class CartComponent {
-  cartItems: CartItem[] = [];
-
-  addItem(index: number) {
-    this.cartItems[index].quantity++;
-  }
-
-  removeItem(index: number) {
-    if (this.cartItems[index].quantity > 1) {
-      this.cartItems[index].quantity--;
-    } else {
-      this.cartItems.splice(index, 1);
-    }
-  }
+  items: Item[] = [
+    { name: 'Wine #1', sku: 'SKU Wine #1', price: 5.00, quantity: 10 },
+    { name: 'Wine #3', sku: 'SKU Wine #3', price: 11.00, quantity: 1 }
+  ];
+  shipping: number = 10.00;
 
   getTotal(): number {
-    return this.cartItems.reduce((acc, item) => acc + (item.price * item.quantity), 0);
-  }
-
-  checkout() {
-    // Simulare il salvataggio degli articoli del carrello e il redirect alla pagina di conferma
-    console.log("Articoli del carrello:", this.cartItems);
-    console.log("Totale:", this.getTotal());
-    // Qui potresti navigare alla tua pagina di conferma con i dati del carrello
+    return this.items.reduce((total, item) => total + item.price * item.quantity, 0);
   }
 }
