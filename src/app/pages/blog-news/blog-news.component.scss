@@ -1,0 +1,48 @@
+@import "../../_variables.scss";
+/* Stili per il componente BlogNews */
+section.blog-posts, section.news {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Questo assicura che ci sia spazio uniforme tra gli articoli. */
+  gap: 1rem; /* Regola il gap secondo necessità. */
+  margin: 15px;
+  border-radius: 20%; /* Assicura che gli angoli degli articoli siano arrotondati */
+}
+
+section.blog-posts article, section.news article {
+  width: calc(33.33% - 1rem); /* Regola il calcolo della larghezza per tener conto del gap se necessario. */
+  margin-bottom: 2rem; /* Aggiunge spazio tra le righe. */
+  /* Stili per il background, padding, ecc., sotto */
+  background: #dde6bb; /* Colore di sfondo esemplificativo, regola secondo necessità */
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ombra esemplificativa, regola secondo necessità */
+}
+
+/* Stili per gli intestazioni e paragrafi all'interno degli articoli */
+section.blog-posts h2, section.news h2,
+section.blog-posts p, section.news p {
+  margin: 0.5rem 0;
+  /* Aggiungi stili di carattere per abbinare il design del sito web */
+}
+
+/* Stili per i link 'Leggi di più' */
+section.blog-posts a, section.news a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  /* Stili per il colore, sfondo, bordo, ecc., per abbinare il design del sito web */
+  color: $primary-color; /* Colore del testo esemplificativo, regola secondo necessità */
+  background-color: black; /* Colore di sfondo esemplificativo, regola secondo necessità */
+  border: 1px solid black; /* Bordo esemplificativo, regola secondo necessità */
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+section.blog-posts a:hover, section.news a:hover {
+  /* Stili per il passaggio del mouse sui link 'Leggi di più' */
+  background-color:$primary-color; /* Colore di sfondo al passaggio del mouse esemplificativo, regola secondo necessità */
+  border-color: black; /* Colore del bordo al passaggio del mouse esemplificativo, regola secondo necessità */
+  color: black;
+}
