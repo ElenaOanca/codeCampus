@@ -1,0 +1,20 @@
+@import "../../_variables.scss";
+
+.faq-container {
+  margin: 20px;
+  padding: 10px;
+  background-color:white;
+}
+
+.faq h3 {
+  color:$secondary-color;
+  font-size: 1.3rem;
+  margin-top: 20px;
+}
+
+.faq p {
+  color:black;
+  font-size: medium;
+
+
+}

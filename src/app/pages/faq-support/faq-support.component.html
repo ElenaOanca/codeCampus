@@ -1,1 +1,7 @@
-<p>faq-support works!</p>
+<div class="faq-container">
+  <h2>Domande Frequenti</h2>
+  <div *ngFor="let faq of faqs" class="faq">
+    <h3>{{ faq.domanda }}</h3>
+    <p>{{ faq.risposta }}</p>
+  </div>
+</div>
