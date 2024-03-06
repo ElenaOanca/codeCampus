@@ -1,7 +1,10 @@
 <!-- code-campus-course.component.html -->
-<div class="course-container" data-aos="fade-up" >
+<div class="course-container" data-aos="fade-up">
   <h2>Vetrina Accademica</h2>
-  <div class="course" *ngFor="let course of courses">
+  <div class="course" *ngFor="let course of courses; let i = index"
+   [attr.data-aos]="i % 2 === 0 ? 'fade-right' : 'fade-left'">
+   <!-- [attr.data-aos-delay]="i * 100"
+   [attr.data-aos-offset]="200" -->
     <div class="course-image">
       <img [src]="course.imageUrl" alt="{{ course.name }}">
     </div>
@@ -11,3 +14,4 @@
     </div>
   </div>
 </div>
+

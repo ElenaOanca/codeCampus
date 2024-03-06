@@ -1,1 +1,15 @@
-<p>cart works!</p>
+<div class="cart-container">
+  <h2>Carrello</h2>
+  <div *ngFor="let item of cartItems; let i = index" class="cart-item">
+    <span>{{ item.name }}</span>
+    <span>{{ item.price }}</span>
+    <span>{{ item.quantity }}</span>
+    <button (click)="removeItem(i)">-</button>
+    <button (click)="addItem(i)">+</button>
+  </div>
+  <div class="total">
+    <h3>Totale: {{ getTotal() }}</h3>
+  </div>
+  <button (click)="checkout()">Paga</button>
+</div>
+
