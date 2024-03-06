@@ -13,87 +13,108 @@ export class CourseListComponent implements OnInit {
   // Definisce esplicitamente il tipo di cards e cardGroups
   cards: { imgSrc: string; title: string; text: string }[] = [
     {
-      imgSrc: '../../../assets/angular.png',
+      imgSrc: 'https://angular.io/assets/images/logos/angular/angular.png',
       title: 'Angular',
       text: 'Angular è un framework per la costruzione di applicazioni web.',
     },
-
     {
-      imgSrc: '../../../assets/react.png',
+      imgSrc: 'https://reactjs.org/logo-og.png',
       title: 'React',
       text: 'React è una libreria JavaScript per la costruzione di interfacce utente.',
     },
-
     {
-      imgSrc: '../../../assets/vue.png',
+      imgSrc: 'https://vuejs.org/images/logo.png',
+      title: 'Vue',
+      text: 'Vue è un framework progressivo per la costruzione di interfacce utente.',
+    },
+    {
+      imgSrc: 'https://www.oracle.com/a/tech/img/cb88-java-logo-001.jpg',
+      title: 'Java',
+      text: 'Java è un linguaggio di programmazione ad alto livello.',
+    },
+    {
+      imgSrc: 'https://angular.io/assets/images/logos/angular/angular.png',
+      title: 'Angular',
+      text: 'Angular è un framework per la costruzione di applicazioni web.',
+    },
+    {
+      imgSrc: 'https://reactjs.org/logo-og.png',
+      title: 'React',
+      text: 'React è una libreria JavaScript per la costruzione di interfacce utente.',
+    },
+    {
+      imgSrc: 'https://vuejs.org/images/logo.png',
+      title: 'Vue',
+      text: 'Vue è un framework progressivo per la costruzione di interfacce utente.',
+    },
+    {
+      imgSrc: 'https://www.oracle.com/a/tech/img/cb88-java-logo-001.jpg',
+      title: 'Java',
+      text: 'Java è un linguaggio di programmazione ad alto livello.',
+    },
+    {
+      imgSrc: 'https://angular.io/assets/images/logos/angular/angular.png',
+      title: 'Angular',
+      text: 'Angular è un framework per la costruzione di applicazioni web.',
+    },
+    {
+      imgSrc: 'https://reactjs.org/logo-og.png',
+      title: 'React',
+      text: 'React è una libreria JavaScript per la costruzione di interfacce utente.',
+    },
+    {
+      imgSrc: 'https://vuejs.org/images/logo.png',
       title: 'Vue',
       text: 'Vue è un framework progressivo per la costruzione di interfacce utente.',
     },
 
     {
-      imgSrc: '../../../assets/nodejs.png',
-      title: 'Node.js',
-      text: 'Node.js è un ambiente di runtime JavaScript per lato server.',
+      imgSrc: 'https://www.oracle.com/a/tech/img/cb88-java-logo-001.jpg',
+      title: 'Java',
+      text: 'Java è un linguaggio di programmazione ad alto livello.',
     },
 
     {
-      imgSrc: '../../../assets/angular.png',
-      title: 'MongoDB',
-      text: 'MongoDB è un database NoSQL flessibile e scalabile.',
+      imgSrc: 'https://angular.io/assets/images/logos/angular/angular.png',
+      title: 'Angular',
+      text: 'Angular è un framework per la costruzione di applicazioni web.',
+    },
+    {
+      imgSrc: 'https://reactjs.org/logo-og.png',
+      title: 'React',
+      text: 'React è una libreria JavaScript per la costruzione di interfacce utente.',
+    },
+    {
+      imgSrc: 'https://vuejs.org/images/logo.png',
+      title: 'Vue',
+      text: 'Vue è un framework progressivo per la costruzione di interfacce utente.',
+    },
+    {
+      imgSrc: 'https://www.oracle.com/a/tech/img/cb88-java-logo-001.jpg',
+      title: 'Java',
+      text: 'Java è un linguaggio di programmazione ad alto livello.',
     },
 
     {
-      imgSrc: '../../../assets/js.png',
-      title: 'Express',
-      text: 'Express è un framework per applicazioni web Node.js.',
+      imgSrc: 'https://angular.io/assets/images/logos/angular/angular.png',
+      title: 'Angular',
+      text: 'Angular è un framework per la costruzione di applicazioni web.',
     },
-
     {
-      imgSrc: '../../../assets/js.png',
-      title: 'TypeScript',
-      text: 'TypeScript è un linguaggio di programmazione open-source sviluppato e mantenuto da Microsoft.',
+      imgSrc: 'https://reactjs.org/logo-og.png',
+      title: 'React',
+      text: 'React è una libreria JavaScript per la costruzione di interfacce utente.',
     },
-
     {
-      imgSrc: '../../../assets/js.png',
-      title: 'JavaScript',
-      text: 'JavaScript è un linguaggio di programmazione ad alto livello, interpretato e orientato agli oggetti.',
+      imgSrc: 'https://vuejs.org/images/logo.png',
+      title: 'Vue',
+      text: 'Vue è un framework progressivo per la costruzione di interfacce utente.',
     },
-
     {
-      imgSrc: '../../../assets/html.png',
-      title: 'HTML',
-      text: 'HTML è un linguaggio di markup per la strutturazione delle pagine web.',
+      imgSrc: 'https://www.oracle.com/a/tech/img/cb88-java-logo-001.jpg',
+      title: 'Java',
+      text: 'Java è un linguaggio di programmazione ad alto livello.',
     },
-
-    {
-      imgSrc: '../../../assets/java.png',
-      title: 'CSS',
-      text: 'CSS è un linguaggio usato per definire la presentazione di un documento scritto in HTML.',
-    },
-
-
-    {
-      imgSrc: '../../../assets/html.png',
-      title: 'HTML',
-      text: 'HTML è un linguaggio di markup per la strutturazione delle pagine web.',
-    },
-
-
-
-    {
-      imgSrc: '../../../assets/java.png',
-      title: 'C++',
-      text: 'C++ è un linguaggio di programmazione ad alto livello, orientato agli oggetti e imperativo.',
-    },
-
-    {
-      imgSrc: '../../../assets/java.png',
-      title: 'C#',
-      text: 'C# è un linguaggio di programmazione orientato agli oggetti sviluppato da Microsoft.',
-    }
-
-
 
 
 
