@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
@@ -66,7 +67,8 @@ import { SubscriptionComponent } from './pages/subscription/subscription.compone
     AppRoutingModule,
     CarouselModule.forRoot(),
     FormsModule,
-    CommonModule
+    CommonModule,
+    HttpClientModule
 
 
   ],

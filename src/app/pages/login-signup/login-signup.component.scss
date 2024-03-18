@@ -56,12 +56,17 @@
   text-align: center; // Centra il testo orizzontalmente
 }
 
-.form-actions button {
+.form-actions button{
   padding: 10px 15px; // Aggiunge un padding di 10px in alto e in basso, e 15px a sinistra e a destra
   margin-right: 10px; // Aggiunge un margine destro di 10px
   border: none; // Rimuove il bordo
   border-radius: 4px; // Arrotonda gli angoli del bottone
   cursor: pointer; // Imposta il cursore a pointer quando si passa sopra il bottone
+}
+a{
+  color: black; // Imposta il colore del testo a bianco
+  text-decoration: none; // Rimuove la sottolineatura
+
 }
 
 .form-actions button:hover {

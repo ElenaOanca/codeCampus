@@ -18,6 +18,8 @@ import { TermsOfServicePrivacyComponent } from './pages/terms-of-service-privacy
 import { Error404Component } from './pages/error-404/error-404.component';
 import { ConfirmationPageComponent } from './pages/confirmation-page/confirmation-page.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { RoleService } from './role.service'; // Replace './path/to/role.service' with the correct file path
+
 
 
 
@@ -42,6 +44,8 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'subscription', component: SubscriptionComponent },
   { path: 'cosa-imparerai', component: CosaImpareraiComponent },
+  { path: 'role', component: RoleService },
+
 
   { path: '**', component: Error404Component } // Wildcard route for 404
 
