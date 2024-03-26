@@ -9,7 +9,7 @@ import { CartComponent } from './pages/cart/cart.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component';
 import { UserProfileComponent } from './pages/user-profile/user-profile.component';
 import { AdminDashboardComponent } from './pages/admin-dashboard/admin-dashboard.component';
-import { LoginSignupComponent } from './pages/login-signup/login-signup.component';
+import { LoginComponent } from './pages/login/login.component';
 import { SearchPageComponent } from './pages/search-page/search-page.component';
 import { FaqSupportComponent } from './pages/faq-support/faq-support.component';
 import { BlogNewsComponent } from './pages/blog-news/blog-news.component';
@@ -34,7 +34,7 @@ const routes: Routes = [
   { path: 'checkout', component: CheckoutComponent },
   { path: 'user-profile', component: UserProfileComponent },
   { path: 'admin-dashboard', component: AdminDashboardComponent },
-  { path: 'login-signup', component: LoginSignupComponent },
+  { path: 'login', component: LoginComponent },
   { path: 'search', component: SearchPageComponent },
   { path: 'faq-support', component: FaqSupportComponent },
   { path: 'blog-news', component: BlogNewsComponent },
