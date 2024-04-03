@@ -1,26 +1,64 @@
-<div id="carouselExampleIndicators" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+
+
+<section class="slogan">
+
+
+<div >
+  <h3>Esplora, Impara, Trasforma: Il Tuo Viaggio Formativo Inizia Qui!</h3>
+</div>
+</section>
+
+
+
+<hr>
+<!-- bottone con la scritta ABBONATI SUBITO che ti porta router link /subscription -->
+<!--<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <button class="btn" routerLink="/subscription">ABBONATI SUBITO</button>
+    </div>
   </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="../../../assets/logobis.jpg" class="d-block w-100" alt="...">
+<hr>-->
+
+
+<!-- //CAROUSEL COMPONENT FOR COURSE LIST PAGE -->
+
+<!--<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner" >
+    <div *ngFor="let card of corsi"
+        class="carousel-item" style="background-color: gray; width: 500px;"
+        (click)="goToDetail(card.id)"><!--click sulla card per andare al dettaglio!
+
+        <div class="image"><img [src]="" class="img" alt="..." /></div>
+
+        <div class="text">
+            <h5>{{ card.name }}</h5>
+            <p>{{ card.description }}</p>
+            <p>Durata: {{ card.duration }} ore, prezzo: {{card.price}} euro</p>
+        </div>
     </div>
-    <div class="carousel-item">
-      <img src="../../../assets/logobis.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="../../../assets/logobis.jpg" class="d-block w-100" alt="...">
-    </div>
+        <a class="carousel-control-prev" role="button" (click)="previous()">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+        <a class="carousel-control-next" role="button" (click)="next()">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+
+
+</div>-->
+
+<div *ngFor="let card of corsi"
+class="carousel-item" style=" width: 500px;"
+(click)="goToDetail(card.id)"><!--click sulla card per andare al dettaglio!-->
+
+<div class="image"><img [src]="card.img" class="img" alt="..." /></div>
+<div class="text">
+    <h5>{{ card.name }}</h5>
+    <p>{{ card.description }}</p>
+    <p>Durata: {{ card.duration }} ore, prezzo: {{card.price}} euro</p>
+</div>
 </div>

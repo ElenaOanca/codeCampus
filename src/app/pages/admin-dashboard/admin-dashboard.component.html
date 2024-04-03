@@ -1,1 +1,31 @@
-<p>admin-dashboard works!</p>
+<!--<h2>Benvenuto Admin {{user.name}} {{user.surname}}</h2>-->
+
+<h4>Lista di corsi</h4>
+
+<button type="button" class="btn btn-primary" (click)="addCorso()">Aggiungi Corso</button>
+
+<div class="row">
+
+  <div *ngFor="let card of corsi" class="card">
+    <img [src]="card.img" class="img" alt="..." />
+    <h5>{{ card.name }}</h5>
+
+    <p>{{card.description}}</p>
+    Durata: {{card.duration}} ore
+    <div>
+      <button type="button" class="btn btn-success" (click)="goToEdit(card.id)">
+        Modifica
+      </button>
+      <button type="button" class="btn btn-danger" (click)="delete(card.id)">
+        Elimina
+      </button>
+    </div>
+  </div>
+</div>
+
+<!--dialog conferma eliminazione-->
+<dialog #dialog>
+  <p>Sicuro di voler eliminare il corso??</p>
+ <button>si</button>
+ <button>no</button>
+</dialog>

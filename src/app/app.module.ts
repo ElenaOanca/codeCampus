@@ -23,7 +23,12 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 
-
+//per ngx bootstrap
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ButtonsModule } from 'ngx-bootstrap/buttons';
+import { AuthInterceptor } from './interceptor/authInterceptor';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -48,13 +53,25 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 
   ],
   imports: [
+
     BrowserModule,
     AppRoutingModule,
     CarouselModule.forRoot(),
 
+    //per bootstrap
+    ButtonsModule.forRoot(),
+    CarouselModule.forRoot(),
+    BsDropdownModule.forRoot(),
+    BrowserAnimationsModule,
 
   ],
-  providers: [],
+  providers: [
+    {
+      provide : HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi   : true,
+    },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

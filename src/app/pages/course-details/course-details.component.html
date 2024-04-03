@@ -1,1 +1,34 @@
-<p>course-details works!</p>
+
+
+<div *ngIf="!isAdmin">
+
+<img [src]="corso?.img" alt="">
+
+<h2>{{corso?.name}}</h2>
+
+<p>{{corso?.description}}</p>
+
+
+<span>Durata: {{corso?.duration}} ore</span>
+<span>Prezzo: {{corso?.price}} euro</span>
+
+</div>
+
+<form [formGroup]="form" *ngIf="isAdmin">
+  <img [src]="corso?.img" alt=""><br>
+Titolo:
+<input type="text" formControlName="name"><br>
+Description:
+<input type="text" formControlName="description"><br>
+Durata:
+<input type="number" formControlName="duration"><br>
+Prezzo:
+<input type="number" formControlName="price"><br>
+Categoria:
+<input type="text" formControlName="category"><br>
+Immagine:
+<input type="text" formControlName="img"><br>
+
+<button (click)="add()" *ngIf="idCorso=='0'" [disabled]="form.invalid">Aggiungi</button>
+<button (click)="edit()" *ngIf="idCorso!=='0'" [disabled]="form.invalid">Modifica</button>
+</form>

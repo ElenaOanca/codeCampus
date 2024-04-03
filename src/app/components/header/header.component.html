@@ -1,3 +1,53 @@
+
+<!--<div class="header row" >
+
+  <div class="col">
+  <a class="navbar-brand" routerLink="/">
+    <img src="../../../assets/logo.png" alt="logo" width="100" height="100">
+  </a>
+</div>
+<div class="col">
+<button type="button" class="btn btn-primary header-button">
+  <a class="nav-link" routerLink="/course-list">CORSI </a>
+</button>
+<div class="btn-group" dropdown>
+  <button id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle header-button" aria-controls="dropdown-basic">
+     <span class="caret"></span>
+  </button>
+  <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic">
+    <ng-container *ngFor="let course of courses">
+      <li class="dropdown-item dropdown-submenu">
+
+        <a class="course-li" [routerLink]="'/course-details/'+course.id"> {{course.category}}</a>
+      </li>
+    </ng-container>
+  </ul>
+</div>
+</div>
+
+
+<div class="col flex">
+
+<div *ngIf="isLoggedIn && isAdmin" >
+  <a class="header-button" routerLink="/admin-dashboard">Admin Dashboard</a>
+</div>
+
+  <div *ngIf="!isLoggedIn">
+      <a class="header-button" routerLink="/login">Login/Signup</a>
+  </div>
+
+  <div *ngIf="isLoggedIn">
+      <a class="header-button" routerLink="/user-profile">User Profile</a>
+  </div>
+
+  <div *ngIf="isLoggedIn" >
+    <a class="header-button"  (click)="logout()">Logout</a>
+</div>
+</div>
+
+</div>
+-->
+
 <!-- Inizio della barra di navigazione -->
 <nav class="navbar navbar-expand-lg  sticky-top">
 
@@ -16,56 +66,46 @@
       <!-- Lista dei link del menu di navigazione -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
  <!-- Link alla lista dei corsi -->
- <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Corsi
-  </a>
-  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-    <ng-container *ngFor="let course of courses">
-      <li class="dropdown-item dropdown-submenu">
-        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">{{ course.category }}</a>
-        <ul class="dropdown-menu">
-          <li *ngFor="let language of course.languages" class="dropdown-item">{{ language }}</li>
-        </ul>
-      </li>
-    </ng-container>
-  </ul>
+
+ <li>
+  <button type="button" class="btn btn-primary header-button">
+    <a class="nav-link" routerLink="/course-list">CORSI </a>
+  </button>
+  <div class="btn-group" dropdown>
+    <button id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle header-button" aria-controls="dropdown-basic">
+       <span class="caret"></span>
+    </button>
+    <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic">
+      <ng-container *ngFor="let course of courses">
+        <li class="dropdown-item dropdown-submenu">
+
+          <a class="course-li" [routerLink]="'/course-details/'+course.id"> {{course.category}}</a>
+        </li>
+      </ng-container>
+    </ul>
+  </div>
 </li>
 
-            <!-- Link alle recensioni-->
-            <li class="nav-item">
-              <a class="nav-link" routerLink="/course-list">About</a>
-          </li>
 
-
-          <!-- Link al checkout -->
-          <li class="nav-item">
-
-          </li>
-          <!-- Form di ricerca -->
-          <li class="nav-item">
-              <form class="d-flex">
-                  <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline" type="submit"><i class="bi bi-search"></i></button>
-              </form>
-          </li>
       </ul>
       <!-- Lista dei link del menu di navigazione a destra -->
       <ul class="navbar-nav">
         <!-- Link alla dashboard admin -->
-        <li class="nav-item">
+        <li class="nav-item"  *ngIf="isLoggedIn && isAdmin">
           <a class="nav-link" routerLink="/admin-dashboard">Admin Dashboard</a>
       </li>
           <!-- Link alla pagina di login/registrazione -->
-          <li class="nav-item">
-              <a class="nav-link" routerLink="/login-signup">Login/Signup</a>
+          <li class="nav-item"  *ngIf="!isLoggedIn">
+              <a class="nav-link" routerLink="/login">Login/Signup</a>
           </li>
           <!-- Link al profilo utente -->
-          <li class="nav-item">
+          <li class="nav-item" *ngIf="isLoggedIn">
               <a class="nav-link" routerLink="/user-profile">User Profile</a>
           </li>
 
-
+          <li class="nav-item" *ngIf="isLoggedIn">
+            <a class="nav-link"  (click)="logout()">Logout</a>
+        </li>
           <!-- Link al carrello -->
           <li class="nav-item">
             <a class="nav-link" routerLink="/cart">
